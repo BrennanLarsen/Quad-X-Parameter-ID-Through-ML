@@ -12,13 +12,11 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 - **[Data](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data)**  
   Contains all the datasets.  
 
-- **Data Investigation**  
+- **[Data Investigation](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data%20Investigation)**  
   Contains all the programs for analyzing distributions, correlations, feature importance, etc. for investigating the data.
-  [Data Investigation](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data%20Investigation)
 
-- **Decision Tree**  
+- **[Decision Tree](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)**  
   Baseline machine learning models for parameter prediction.  
-  [Decision Tree](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)
   
 
 ## Approach
