@@ -9,9 +9,8 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
   Physics-based simulation used to generate training and testing flight data.  
   [Quadrotor-X Dynamic Simulation](https://github.com/BrennanLarsen/Quadrotor-X-Dynamic-Simulation)
 
-  - **Data**  
+- **[Data](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data)**  
   Contains all the datasets.  
-  [Data](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data)
 
 - **Data Investigation**  
   Contains all the programs for analyzing distributions, correlations, feature importance, etc. for investigating the data.
