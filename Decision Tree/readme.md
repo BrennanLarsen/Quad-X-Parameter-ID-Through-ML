@@ -1,11 +1,11 @@
 # Decision Tree
 
-This folder contains the machine learning model used to estimate quadrotor parameters from simulated flight data.
+This folder contains the decision tree ML model used to estimate quadrotor parameters from simulated flight data.
 
 - **DecisionTree_Train.py** – Trains the decision tree model  
 - **DecisionTree_Test.py** – Tests and evaluates model performance
 
-## Results
+## Results (so far)
 
 | Parameter | Mean Training Error (%) | Mean Test Error (%) |
 |------------|-------------------:|---------------:|
