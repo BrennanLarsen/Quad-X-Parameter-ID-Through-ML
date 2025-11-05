@@ -1,6 +1,6 @@
 # Comparison of Single vs Multi Output
 
-| Parameter     | MultiOutput<br>Mean Test Error (%) | SingleOutput<br>Mean Test Error (%) |
+| Parameter     | MultiOutput<b>Mean Test Error (%) | SingleOutput<b>Mean Test Error (%) |
 |---------------|-----------------------------------:|-------------------------------------:|
 | Thrust Coeff  |                              29.71 |                               29.71 |
 | Drag Coeff    |                              38.34 |                               42.81 |
