@@ -12,11 +12,12 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
   Contains all the datasets.  
 
 - **[Data Investigation](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data%20Investigation)**  
-  Contains all the programs for analyzing distributions, correlations, feature importance, etc. for investigating the data.
+  Programs for analyzing distributions, correlations, and feature importance for data exploration.
 
 - **[Decision Tree](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)**  
   Baseline machine learning models for parameter prediction.  
-  
+  - **MultiOutput** – Predicts all five parameters (thrust, drag, and inertias) simultaneously.  
+  - **SingleOutput** – Predicts one parameter at a time.  
 
 ## Approach
 1. **Data Generation**  
@@ -24,7 +25,7 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
    - Testing data: Latin Hypercube Sampling (LHS) for randomized, well-distributed parameter combinations.
 
 2. **Exploratory Data Analysis**  
-   - Examine distributions, correlations, feature importance and engineering.  
+   - Examine distributions, correlations, and feature importance.  
    - Identify features most informative for predicting parameters.
 
 3. **Modeling**  
