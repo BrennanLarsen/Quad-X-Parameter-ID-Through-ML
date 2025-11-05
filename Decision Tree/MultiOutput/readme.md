@@ -1,4 +1,4 @@
-# Decision Tree
+# MultiOutput Decision Tree
 
 This folder contains the decision tree ML model used to estimate quadrotor parameters from simulated flight data.
 
@@ -17,5 +17,5 @@ This folder contains the decision tree ML model used to estimate quadrotor param
 
 The plots below show the predicted vs. actual parameter values (left) and the percent error (right) for the test data.
 
-![Decision Tree Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/25db1e27de723fc43bcdef844c3ae299249fb109/Decision%20Tree/Figures/Decision%20Tree%20Results.png)
+![Decision Tree Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/c531dee0bf72c6eee763edb319e97f4d9700b76c/Decision%20Tree/MultiOutput/Figures/Decision%20Tree%20Results.png)
 
