@@ -1,7 +1,7 @@
 # Quadrotor(X) Parameter Identification Through Machine Learning
 
 ## Overview
-Accurately identifying a quadrotor’s physical parameters (moments of inertia (X, Y, Z), thrust, and drag) is crucial for precise control and stable flight. Traditional methods are labor-intensive and sensitive to hardware changes. This project explores using **machine learning** to predict these parameters directly from flight data without requiring full analytical modeling.
+Accurately identifying a quadrotor’s physical parameters (moments of inertia (X, Y, Z), thrust, and drag) is crucial for precise control and stable flight. Traditional methods are labor-intensive and sensitive to hardware changes. This project explores using machine learning to predict these parameters directly from flight data without requiring full analytical modeling.
 
 ## Repository Structure
 
