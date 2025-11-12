@@ -9,7 +9,7 @@ This folder contains the Linear Regression ML model used to estimate quadrotor p
 
 | Parameter | Mean Training Error (%) | Mean Test Error (%) |
 |------------|-------------------:|---------------:|
-| Thrust Coeff | 136.38 | 119.6 |
+| Thrust Coeff | 136.38 | 119.67 |
 | Drag Coeff | 156.24 | 105.69 |
 | X-Inertia | 85.43 | 94.69 |
 | Y-Inertia | 80.52 | 101.94 |
