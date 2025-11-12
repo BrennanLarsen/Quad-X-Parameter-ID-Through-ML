@@ -31,3 +31,19 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 3. **Modeling**  
    - Baseline: Decision tree for interpretable, nonlinear predictions.  
    - Future: Neural networks or online learning models may be explored for improved accuracy.
+  
+
+## Results
+
+| Parameter     | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Decision Tree<br><div align="center">SingleOutput<br>Mean Test Error (%)</div> | <div align="center">Linear Regression<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Linear Regression<br><div align="center">SingleOutput<br>Mean Test Error (%)</div> |
+|---------------|:------------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------:|:--------------------------------------------------------------:|
+| Thrust Coeff  | 29.71 | 29.71 | 119.67 | - |
+| Drag Coeff    | 38.34 | 42.81 | 105.69 | - |
+| X-Inertia     | 31.03 | 31.03 | 94.69 | - |
+| Y-Inertia     | 20.17 | 20.17 | 101.94 | - |
+| Z-Inertia     | 36.12 | 43.63 | 98.38 | - |
+
+
+
+
+
