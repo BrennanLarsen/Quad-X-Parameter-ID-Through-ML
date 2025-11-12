@@ -17,6 +17,11 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 - **[Decision Tree](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)**  
   Baseline machine learning models for parameter prediction.  
   - **MultiOutput** – Predicts all five parameters (thrust, drag, and inertias) simultaneously.  
+  - **SingleOutput** – Predicts one parameter at a time.
+ 
+- **[Linear Regression](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Linear%20Regression)**  
+  Not expected to preform well but a simple model worth checking.  
+  - **MultiOutput** – Predicts all five parameters (thrust, drag, and inertias) simultaneously.  
   - **SingleOutput** – Predicts one parameter at a time.  
 
 ## Approach
@@ -33,7 +38,7 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
    - Future: Neural networks or online learning models may be explored for improved accuracy.
   
 
-## Results
+## Results Summerized
 
 | Parameter     | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Decision Tree<br><div align="center">SingleOutput<br>Mean Test Error (%)</div> | <div align="center">Linear Regression<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Linear Regression<br><div align="center">SingleOutput<br>Mean Test Error (%)</div> |
 |---------------|:------------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------:|:--------------------------------------------------------------:|
