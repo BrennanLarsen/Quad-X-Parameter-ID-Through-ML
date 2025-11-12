@@ -17,13 +17,13 @@ This folder contains the Linear Regression ML model used to estimate quadrotor p
 
 The plots below show the predicted vs. actual parameter values (left) and the percent error (right) for the test data (single output).
 
-![Thrust Coeff Model Results]()
+![Thrust Coeff Model Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/041cc2867e875f79715f6c0d6ad1593a36536703/Linear%20Regression/SingleOutput/Figures/Thrust%20Coeff%20Linear%20Regression%20Results.png)
 
-![Rotor Drag Coeff Model Results]()
+![Rotor Drag Coeff Model Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/041cc2867e875f79715f6c0d6ad1593a36536703/Linear%20Regression/SingleOutput/Figures/Rotor%20Drag%20Coeff%20Linear%20Regression%20Results.png)
 
-![X-Inertia Model Results]()
+![X-Inertia Model Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/041cc2867e875f79715f6c0d6ad1593a36536703/Linear%20Regression/SingleOutput/Figures/X-Inertia%20Linear%20Regression%20Results.png)
 
-![Y-Inertia Model Results]()
+![Y-Inertia Model Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/041cc2867e875f79715f6c0d6ad1593a36536703/Linear%20Regression/SingleOutput/Figures/Y-Inertia%20Linear%20Regression%20Results.png)
 
-![Z-Inertia Model Results]()
+![Z-Inertia Model Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/041cc2867e875f79715f6c0d6ad1593a36536703/Linear%20Regression/SingleOutput/Figures/Z-Inertia%20Linear%20Regression%20Results.png)
 
