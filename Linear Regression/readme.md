@@ -1,5 +1,5 @@
-# Linear Regression
-Comparison of Single vs Multi Output
+# Linear Regression<br>Comparison of Single vs Multi Output
+
 
 | Parameter     | <div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">SingleOutput<br>Mean Test Error (%)</div> |
 |---------------|:------------------------------------------------------------:|:--------------------------------------------------------------:|
