@@ -51,6 +51,18 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 | Y-Inertia     | 20.17 | 20.17 | 101.94 | 101.94 |
 | Z-Inertia     | 36.12 | 43.63 | 98.38 | 98.38 |
 
+## Results Summerized (Data Set 2)
+| Parameter     | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Train Error (%)</div> | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Random Forest Tree<br><div align="center">MultiOutput<br>Mean Train Error (%)</div> | <div align="center">Random Forest Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> |
+|---------------|:------------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------:|:--------------------------------------------------------------:|
+| Thrust Coeff  | 0.00 | 11.10 | 8.85 | 11.19 |
+| Drag Coeff    | 0.00 | 18.57 | 19.52 | 19.44 |
+| X-Inertia     | 0.00 | 10.22 | 8.09 | 11.70 |
+| Y-Inertia     | 0.00 | 10.25 | 8.09 | 12.36 |
+| Z-Inertia     | 0.00 | 18.61 | 20.95 | 19.03 |
+
+
+
+
 
 
 
