@@ -26,7 +26,7 @@ Machine learning models that were investigated:
   
 ## Results Summerized
 
-| Parameter | SingleOutput Linear Regression<br>Train | SingleOutput Linear Regression<br>Test | MultiOutput Linear Regression<br>Train | MultiOutput Linear Regression<br>Test | SingleOutput Decision Tree<br>Train | SingleOutput Decision Tree<br>Test | MultiOutput Decision Tree<br>Train | MultiOutput Decision Tree<br>Test | Random Forest (MultiOutput)<br>Train | Random Forest (MultiOutput)<br>Test | Cascading Model<br>Train | Cascading Model<br>Test |
+| Parameter | SingleOutput<br>Linear Regression<br>Train | SingleOutput Linear Regression<br>Test | MultiOutput Linear Regression<br>Train | MultiOutput Linear Regression<br>Test | SingleOutput Decision Tree<br>Train | SingleOutput Decision Tree<br>Test | MultiOutput Decision Tree<br>Train | MultiOutput Decision Tree<br>Test | Random Forest (MultiOutput)<br>Train | Random Forest (MultiOutput)<br>Test | Cascading Model<br>Train | Cascading Model<br>Test |
 |:---------:|:----------------------------------------:|:---------------------------------------:|:----------------------------------------:|:---------------------------------------:|:------------------------------------:|:-----------------------------------:|:-------------------------------------:|:------------------------------------:|:----------------------------------------:|:---------------------------------------:|:-------------------------------:|:------------------------------:|
 | Thrust Coeff | 136.38 | 119.67 | 136.38 | 119.67 | 0.00 | 29.71 | 0.00 | 11.10 | 8.85 | 11.19 | 6.83 | 9.03 |
 | Drag Coeff   | 156.24 | 105.69 | 156.24 | 105.69 | 0.00 | 42.81 | 0.00 | 18.57 | 19.52 | 19.44 | 13.97 | 16.37 |
