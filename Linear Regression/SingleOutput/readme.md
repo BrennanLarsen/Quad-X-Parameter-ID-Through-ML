@@ -1,11 +1,6 @@
 # SingleOutput Linear Regression
 
-This folder contains the Linear Regression ML model used to estimate quadrotor parameters from simulated flight data for a single output (parameter) at a time.
-
-- **SingleLinearRegressionTrain.py** – Trains the Linear Regression model (single output) 
-- **SingleLinearRegressionTest.py** – Tests and evaluates model performance (single output)
-
-## Results (so far)
+## Results
 
 | Parameter | Mean Training Error (%) | Mean Test Error (%) |
 |------------|-------------------:|---------------:|
