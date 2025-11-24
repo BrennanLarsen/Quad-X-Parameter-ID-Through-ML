@@ -1,6 +1,6 @@
 # Cascading Model
 
-This cascading model has three layers that progressively refine predictions:
+This cascading model has three layers that progressively refine predictions: 
 
 1. Linear Regression - Initial linear predictions
 2. Decision Trees - Two parallel trees refining aerodynamic and inertial outputs separately
