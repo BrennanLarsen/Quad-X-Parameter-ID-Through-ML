@@ -1,11 +1,6 @@
 # MultiOutput Linear Regression
 
-This folder contains the Linear Regression ML model used to estimate quadrotor parameters from simulated flight data.
-
-- **LinearRegressionTrain.py** – Trains the decision tree model  
-- **LinearRegressionTest.py** – Tests and evaluates model performance
-
-## Results (so far)
+## Results
 
 | Parameter | Mean Training Error (%) | Mean Test Error (%) |
 |------------|-------------------:|---------------:|
