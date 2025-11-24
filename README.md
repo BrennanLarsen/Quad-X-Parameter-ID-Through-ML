@@ -16,29 +16,11 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 - **[Data Investigation](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Data%20Investigation)**  
   Programs for analyzing distributions, correlations, and feature importance for data exploration.
 
-- **[Decision Tree](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)**  
-  Baseline machine learning models for parameter prediction.  
-  - **MultiOutput** – Predicts all five parameters (thrust, drag, and inertias) simultaneously.  
-  - **SingleOutput** – Predicts one parameter at a time.
- 
-- **[Linear Regression](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Linear%20Regression)**  
-  Not expected to preform well but a simple model worth checking.  
-  - **MultiOutput** – Predicts all five parameters (thrust, drag, and inertias) simultaneously.  
-  - **SingleOutput** – Predicts one parameter at a time.  
-
-
-## Approach
-1. **Data Generation**  
-   - Training data: Piecewise design of experiments (DOE).  
-   - Testing data: Latin Hypercube Sampling (LHS) for randomized, well-distributed parameter combinations.
-
-2. **Exploratory Data Analysis**  
-   - Examine distributions, correlations, and feature importance.  
-   - Identify features most informative for predicting parameters.
-
-3. **Modeling**  
-   - Baseline: Decision tree for interpretable, nonlinear predictions.  
-   - Future: Neural networks or online learning models may be explored for improved accuracy.
+Machine learning models that were investigated:
+- **[Decision Tree (Multi and Single Output)](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)**  
+- **[Linear Regression (Multi and Single Output)](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Linear%20Regression)**
+- **[Random Forest (Multi Output)](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Random%20Forest)**
+- **[Cascading Model](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Cascading%20Model)**  
 
   
 ## Results Summerized
@@ -51,14 +33,6 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 | Y-Inertia     | 20.17 | 20.17 | 101.94 | 101.94 |
 | Z-Inertia     | 36.12 | 43.63 | 98.38 | 98.38 |
 
-## Results Summerized (Data Set 2)
-| Parameter     | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Train Error (%)</div> | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Random Forest Tree<br><div align="center">MultiOutput<br>Mean Train Error (%)</div> | <div align="center">Random Forest Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> |
-|---------------|:------------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------:|:--------------------------------------------------------------:|
-| Thrust Coeff  | 0.00 | 11.10 | 8.85 | 11.19 |
-| Drag Coeff    | 0.00 | 18.57 | 19.52 | 19.44 |
-| X-Inertia     | 0.00 | 10.22 | 8.09 | 11.70 |
-| Y-Inertia     | 0.00 | 10.25 | 8.09 | 12.36 |
-| Z-Inertia     | 0.00 | 18.61 | 20.95 | 19.03 |
 
 
 
