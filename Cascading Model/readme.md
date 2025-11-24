@@ -15,6 +15,6 @@ Bleh
 
 The plots below show the predicted vs. actual parameter values (left) and the percent error (right) for the test data.
 
-![Cascading Model Results]()
+![Cascading Model Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/cbd4f59a67737e68d1d849fee6cee15159659879/Cascading%20Model/Figures/Cascading%20Model%20Results.png)
 
 
