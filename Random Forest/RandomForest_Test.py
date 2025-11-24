@@ -1,0 +1,129 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from pathlib import Path
+import joblib
+import warnings
+warnings.filterwarnings('ignore')
+
+
+# ================================================== #
+#    Paths
+# ================================================== #
+model_path = Path(__file__).parent / "RandomForest_Model.pkl"
+test_data_path = Path(
+    r"TEST_DATA_FILE_PATH_HERE.xlsx"
+)
+
+
+# ================================================== #
+#    Helper Functions
+# ================================================== #
+def denormalize_data(data_normalized, norm_params, columns):  # reverse normalization
+    data_denormalized = data_normalized.copy()
+    for i, col in enumerate(columns):
+        min_val = norm_params[col]['min']
+        range_val = norm_params[col]['range']
+        data_denormalized[:, i] = data_normalized[:, i] * range_val + min_val
+    return data_denormalized
+
+
+def normalize_data(data, norm_params, columns):  # min-max normalization using stored normalization params
+    data_normalized = data.copy()
+    for col in columns:
+        if col in norm_params:
+            min_val = norm_params[col]['min']
+            range_val = norm_params[col]['range']
+            if range_val == 1 and min_val == norm_params[col]['max']:
+                data_normalized[col] = 0
+            else:
+                data_normalized[col] = (data[col] - min_val) / range_val
+    return data_normalized
+
+
+# ================================================== #
+#    Load and Prep Test Data
+# ================================================== #
+def load_test_data(path, feature_cols, output_norm_params, normalize_output_cols):
+    df_test = pd.read_excel(path, engine='openpyxl')
+    output_cols = ['c_T', 'c_RD', 'I_x', 'I_y', 'I_z']
+
+    # Extract features
+    X_test = df_test[feature_cols].values
+
+    # Extract and normalize outputs
+    df_outputs = df_test[output_cols].copy()
+    df_outputs_norm = normalize_data(df_outputs, output_norm_params, normalize_output_cols)
+    Y_test_norm = df_outputs_norm.values
+
+    num_quadrotors = len(df_test)
+
+    return X_test, Y_test_norm, num_quadrotors
+
+
+# ================================================== #
+#    Evaluation Function
+# ================================================== #
+def evaluate_model(model_path, test_data_path, plot_results=True):
+    model_data = joblib.load(model_path)
+    model = model_data['model']
+    hp = model_data['hyperparameters']
+    output_norm_params = model_data['output_norm_params']
+    normalize_output_cols = model_data['normalize_output_cols']
+    feature_cols = model_data['feature_cols']
+
+    X_test, Y_test_norm, num_quadrotors = load_test_data(
+        test_data_path, feature_cols, output_norm_params, normalize_output_cols
+    )
+
+    predictions_norm = model.predict(X_test)
+    Y_test = denormalize_data(Y_test_norm, output_norm_params, normalize_output_cols)
+    predictions = denormalize_data(predictions_norm, output_norm_params, normalize_output_cols)
+
+    output_names = ["Thrust Coeff", "Drag Coeff", "X-Inertia", "Y-Inertia", "Z-Inertia"]
+
+    print("\nTEST SET MEAN PERCENT ERROR:")
+    print("=" * 50)
+    for i, name in enumerate(output_names):
+        errors = predictions[:, i] - Y_test[:, i]
+        percent_errors = (errors / Y_test[:, i]) * 100
+        mean_percent_error = np.mean(np.abs(percent_errors))
+        print(f"{name:<25} {mean_percent_error:>6.2f}%")
+
+    if plot_results:
+        fig, axes = plt.subplots(5, 2, figsize=(14, 16))
+        axes[0, 0].set_title('Predicted Values', fontsize=12, fontweight='bold')
+        axes[0, 1].set_title('Percent Error', fontsize=12, fontweight='bold')
+
+        for i, name in enumerate(output_names):
+            quad_indices = np.arange(num_quadrotors)
+
+            ax_pred = axes[i, 0]
+            ax_pred.plot(quad_indices, Y_test[:, i], 'bo-', linewidth=1.2, markersize=3, label='Actual')
+            ax_pred.plot(quad_indices, predictions[:, i], 'rs--', linewidth=1.2, markersize=3, label='Predicted')
+            if i == len(output_names) - 1:
+                ax_pred.set_xlabel('Quadrotor Index', fontsize=10)
+            ax_pred.set_ylabel(f'{name}', fontsize=10)
+            ax_pred.legend(loc='upper left')
+            ax_pred.grid(True)
+
+            ax_err = axes[i, 1]
+            errors = predictions[:, i] - Y_test[:, i]
+            percent_errors = (errors / Y_test[:, i]) * 100
+            mean_percent_error = np.mean(np.abs(percent_errors))
+            ax_err.plot(quad_indices, percent_errors, 'go-', linewidth=1.2, markersize=3)
+            ax_err.axhline(y=0, color='k', linestyle='-', linewidth=1)
+            ax_err.axhline(y=mean_percent_error, color='k', linestyle='--', linewidth=1.2, 
+                           label=f'Avg: {mean_percent_error:.2f}%')
+            if i == len(output_names) - 1:
+                ax_err.set_xlabel('Quadrotor Index', fontsize=10)
+            ax_err.set_ylabel(f'{name}', fontsize=10)
+            ax_err.legend(loc='upper right')
+            ax_err.grid(True)
+
+        plt.tight_layout()
+        plt.show()
+
+
+if __name__ == "__main__":
+    evaluate_model(model_path, test_data_path, plot_results=True)
