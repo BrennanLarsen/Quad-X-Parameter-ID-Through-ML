@@ -26,10 +26,10 @@ Machine learning models that were investigated:
   
 ## Results Summerized
 
-|    Parameter    | SingleOutput<br>Linear&nbsp;Regression<br>Train&nbsp;(%)Error | SingleOutput<br>Linear&nbsp;Regression<br>Test&nbsp;(%)Error | MultiOutput<br>Linear&nbsp;Regression<br>Train&nbsp;(%)Error | MultiOutput<br>Linear&nbsp;Regression<br>Test&nbsp;(%)Error | SingleOutput<br>Decision&nbsp;Tree<br>Train&nbsp;(%)Error | SingleOutput<br>Decision&nbsp;Tree<br>Test&nbsp;(%)Error | MultiOutput<br>Decision&nbsp;Tree<br>Train&nbsp;(%)Error | MultiOutput<br>Decision&nbsp;Tree<br>Test&nbsp;(%)Error | MultiOutput<br>Random&nbsp;Forest<br>Train&nbsp;(%)Error | MultiOutput<br>Random&nbsp;Forest<br>Test&nbsp;(%)Error | <br><br>Cascading&nbsp;Model<br>Train&nbsp;(%)Error | <br><br>Cascading&nbsp;Model<br>Test&nbsp;(%)Error |
+| Parameter | SingleOutput<br>Linear&nbsp;Regression<br>Train&nbsp;(%)Error | SingleOutput<br>Linear&nbsp;Regression<br>Test&nbsp;(%)Error | MultiOutput<br>Linear&nbsp;Regression<br>Train&nbsp;(%)Error | MultiOutput<br>Linear&nbsp;Regression<br>Test&nbsp;(%)Error | SingleOutput<br>Decision&nbsp;Tree<br>Train&nbsp;(%)Error | SingleOutput<br>Decision&nbsp;Tree<br>Test&nbsp;(%)Error | MultiOutput<br>Decision&nbsp;Tree<br>Train&nbsp;(%)Error | MultiOutput<br>Decision&nbsp;Tree<br>Test&nbsp;(%)Error | MultiOutput<br>Random&nbsp;Forest<br>Train&nbsp;(%)Error | MultiOutput<br>Random&nbsp;Forest<br>Test&nbsp;(%)Error | <br><br>Cascading&nbsp;Model<br>Train&nbsp;(%)Error | <br><br>Cascading&nbsp;Model<br>Test&nbsp;(%)Error |
 |:------------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| Thrust Coeff | 136.38 | 119.67 | 136.38 | 119.67 | 0.00 | 29.71 | 0.00 | 11.10 | 8.85 | 11.19 | 6.83 | 9.03 |
-| Drag Coeff   | 156.24 | 105.69 | 156.24 | 105.69 | 0.00 | 42.81 | 0.00 | 18.57 | 19.52 | 19.44 | 13.97 | 16.37 |
+| Thrust&nbsp;Coeff | 136.38 | 119.67 | 136.38 | 119.67 | 0.00 | 29.71 | 0.00 | 11.10 | 8.85 | 11.19 | 6.83 | 9.03 |
+| Drag&nbsp;Coeff   | 156.24 | 105.69 | 156.24 | 105.69 | 0.00 | 42.81 | 0.00 | 18.57 | 19.52 | 19.44 | 13.97 | 16.37 |
 | X-Inertia    | 85.43 | 94.69 | 85.43 | 94.69 | 0.00 | 31.03 | 0.00 | 10.22 | 8.09 | 11.70 | 5.69 | 8.51 |
 | Y-Inertia    | 80.52 | 101.94 | 80.52 | 101.94 | 0.00 | 20.17 | 0.00 | 10.24 | 8.09 | 12.36 | 5.71 | 8.09 |
 | Z-Inertia    | 82.15 | 98.38 | 82.15 | 98.38 | 0.00 | 43.63 | 0.00 | 18.61 | 20.95 | 19.03 | 14.50 | 15.01 |
