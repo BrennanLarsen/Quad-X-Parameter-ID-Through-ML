@@ -2,7 +2,7 @@
 
 Bleh
 
-## Results (so far)
+## Results
 
 | Parameter | Mean Training Error (%) | Mean Test Error (%) |
 |------------|-------------------:|---------------:|
