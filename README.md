@@ -26,13 +26,41 @@ Machine learning models that were investigated:
   
 ## Results Summerized
 
-| Parameter     | <div align="center">Decision Tree<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Decision Tree<br><div align="center">SingleOutput<br>Mean Test Error (%)</div> | <div align="center">Linear Regression<br><div align="center">MultiOutput<br>Mean Test Error (%)</div> | <div align="center">Linear Regression<br><div align="center">SingleOutput<br>Mean Test Error (%)</div> |
-|---------------|:------------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------:|:--------------------------------------------------------------:|
-| Thrust Coeff  | 29.71 | 29.71 | 119.67 | 119.67 |
-| Drag Coeff    | 38.34 | 42.81 | 105.69 | 105.69 |
-| X-Inertia     | 31.03 | 31.03 | 94.69 | 94.69 |
-| Y-Inertia     | 20.17 | 20.17 | 101.94 | 101.94 |
-| Z-Inertia     | 36.12 | 43.63 | 98.38 | 98.38 |
+# Model Comparison Results
+
+| Model                      | Parameter     | Mean Training Error (%) | Mean Test Error (%) |
+|----------------------------|---------------|--------------------------|----------------------|
+| **SingleOutput Linear Regression** | Thrust Coeff | 136.38 | 119.67 |
+|                            | Drag Coeff    | 156.24 | 105.69 |
+|                            | X-Inertia     | 85.43 | 94.69 |
+|                            | Y-Inertia     | 80.52 | 101.94 |
+|                            | Z-Inertia     | 82.15 | 98.38 |
+| **MultiOutput Linear Regression** | Thrust Coeff | 136.38 | 119.67 |
+|                            | Drag Coeff    | 156.24 | 105.69 |
+|                            | X-Inertia     | 85.43 | 94.69 |
+|                            | Y-Inertia     | 80.52 | 101.94 |
+|                            | Z-Inertia     | 82.15 | 98.38 |
+| **SingleOutput Decision Tree** | Thrust Coeff | 0.00 | 29.71 |
+|                            | Drag Coeff    | 0.00 | 42.81 |
+|                            | X-Inertia     | 0.00 | 31.03 |
+|                            | Y-Inertia     | 0.00 | 20.17 |
+|                            | Z-Inertia     | 0.00 | 43.63 |
+| **MultiOutput Decision Tree** | Thrust Coeff | 0.00 | 11.10 |
+|                            | Drag Coeff    | 0.00 | 18.57 |
+|                            | X-Inertia     | 0.00 | 10.22 |
+|                            | Y-Inertia     | 0.00 | 10.24 |
+|                            | Z-Inertia     | 0.00 | 18.61 |
+| **Random Forest (MultiOutput)** | Thrust Coeff | 8.85 | 11.19 |
+|                            | Drag Coeff    | 19.52 | 19.44 |
+|                            | X-Inertia     | 8.09 | 11.70 |
+|                            | Y-Inertia     | 8.09 | 12.36 |
+|                            | Z-Inertia     | 20.95 | 19.03 |
+| **Cascading Model**        | Thrust Coeff  | 6.83 | 9.03 |
+|                            | Drag Coeff    | 13.97 | 16.37 |
+|                            | X-Inertia     | 5.69 | 8.51 |
+|                            | Y-Inertia     | 5.71 | 8.09 |
+|                            | Z-Inertia     | 14.50 | 15.01 |
+
 
 
 
