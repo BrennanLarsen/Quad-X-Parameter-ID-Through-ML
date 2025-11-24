@@ -1,11 +1,6 @@
 # SingleOutput Decision Tree
 
-This folder contains the decision tree ML model used to estimate quadrotor parameters from simulated flight data for a single output (parameter) at a time.
-
-- **SingleDecisionTree_Train.py** – Trains the decision tree model (single output) 
-- **SingleDecisionTree_Test.py** – Tests and evaluates model performance (single output)
-
-## Results (so far)
+## Results
 
 | Parameter | Mean Training Error (%) | Mean Test Error (%) |
 |------------|-------------------:|---------------:|
