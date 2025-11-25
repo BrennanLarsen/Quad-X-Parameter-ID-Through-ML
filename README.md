@@ -27,7 +27,7 @@ Machine learning models that were investigated:
 ## Results Summerized
 
 | Parameter | SingleOutput<br>Linear&nbsp;Regression<br>Train&nbsp;(%)Error | SingleOutput<br>Linear&nbsp;Regression<br>Test&nbsp;(%)Error | MultiOutput<br>Linear&nbsp;Regression<br>Train&nbsp;(%)Error | MultiOutput<br>Linear&nbsp;Regression<br>Test&nbsp;(%)Error | SingleOutput<br>Decision&nbsp;Tree<br>Train&nbsp;(%)Error | SingleOutput<br>Decision&nbsp;Tree<br>Test&nbsp;(%)Error | MultiOutput<br>Decision&nbsp;Tree<br>Train&nbsp;(%)Error | MultiOutput<br>Decision&nbsp;Tree<br>Test&nbsp;(%)Error | MultiOutput<br>Random&nbsp;Forest<br>Train&nbsp;(%)Error | MultiOutput<br>Random&nbsp;Forest<br>Test&nbsp;(%)Error | MultiOutput<br>Cascading&nbsp;Model<br>Train&nbsp;(%)Error | MultiOutput<br>Cascading&nbsp;Model<br>Test&nbsp;(%)Error | MultiOutput<br>Neural&nbsp;Network<br>Train&nbsp;(%)Error | MultiOutput<br>Neural&nbsp;Network<br>Test&nbsp;(%)Error |
-|:------------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:------------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | Thrust&nbsp;Coeff | 136.38 | 119.67 | 136.38 | 119.67 | 0.00 | 29.71 | 0.00 | 11.10 | 8.85 | 11.19 | 6.83 | 9.03 | 121.84 | 87.42 |
 | Drag&nbsp;Coeff   | 156.24 | 105.69 | 156.24 | 105.69 | 0.00 | 42.81 | 0.00 | 18.57 | 19.52 | 19.44 | 13.97 | 16.37 | 109.08 | 84.98 |
 | X-Inertia    | 85.43 | 94.69 | 85.43 | 94.69 | 0.00 | 31.03 | 0.00 | 10.22 | 8.09 | 11.70 | 5.69 | 8.51 | 92.81 | 80.43 |
@@ -36,14 +36,6 @@ Machine learning models that were investigated:
 
 
 
-
-| Parameter | Mean Training Error (%) | Mean Test Error (%) |
-|------------|-------------------:|---------------:|
-| Thrust Coeff | 121.84 | 87.42 |
-| Drag Coeff | 109.08 | 84.98 |
-| X-Inertia | 92.81 | 80.43 |
-| Y-Inertia | 102.50 | 81.02 |
-| Z-Inertia | 83.00 | 57.89 |
 
 
 
