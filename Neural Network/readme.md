@@ -13,7 +13,7 @@
 
 The plots below show the predicted vs. actual parameter values (left) and the percent error (right) for the test data.
 
-![Neural Network Results]()
+![Neural Network Results](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/blob/e6292de78d924cfbca3fe8ed161f8acb517f0755/Neural%20Network/Figures/Neural%20Network%20Results.png)
 
 
 
