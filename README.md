@@ -20,7 +20,7 @@ Accurately identifying a quadrotor’s physical parameters (moments of inertia (
 Machine learning models that were investigated:
 - **[Decision Tree (Multi and Single Output)](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Decision%20Tree)**  
 - **[Linear Regression (Multi and Single Output)](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Linear%20Regression)**
-- **[Random Forest (Multi Output)](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Random%20Forest)**
+- **[Random Forest](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Random%20Forest)**
 - **[Cascading Model](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Cascading%20Model)**
 - **[Neural Network](https://github.com/BrennanLarsen/Quad-X-Parameter-ID-Through-ML/tree/main/Neural%20Network)**  
 
